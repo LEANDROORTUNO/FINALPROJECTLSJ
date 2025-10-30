@@ -1,4 +1,9 @@
 #POETRY
+Erol Sebastian Morant Melgar Ing Informatica
+REPOSITORIO GITHUB: FINALPROJECTLSJ
+COMPANEROS DE TRABAJO:
+Leandro Andre Ortuno Cespedes
+Jose Ignacio Ventura
 # Que es?
 El poetry es una herramienta de gestion de dependencias para proyectos de Phyton,el poetry tiene dos maneras de uso que son como herramienta en Phyton y como arte las cuales se puede usar:
 Como gestion de dependencias:tambien se encarga de añadir, actualizar y eliminar las bibliotecas de las que depende el proyecto.
