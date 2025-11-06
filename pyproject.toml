@@ -1,18 +1,22 @@
-[project]
+[tool.poetry]
 name = "finalprojectlsj"
 version = "0.1.0"
 description = "Proyecto Para graficar Ejercicios de LabFisica FINALPROJECTLSJ"
-authors = [
-    {name = "LEANDROORTUNO",email = "menprogramacion@gmail.com"}
-]
+# Formato compatible con Poetry para autores
+authors = ["LEANDROORTUNO <menprogramacion@gmail.com>"]
 readme = "README.md"
-requires-python = "^3.11"
-dependencies = [
-    "matplotlib (>=3.10.7,<4.0.0)",
-    "numpy (>=2.3.4,<3.0.0)"
-]
 
+# LÍNEA CRUCIAL: Le dice a Poetry dónde está tu código fuente
+packages = [{include = "CodigoProyecto"}]
+
+[tool.poetry.dependencies]
+# La dependencia de Python es obligatoria en esta sección
+python = "^3.11"
+# Dependencias listadas como llave = valor
+matplotlib = ">=3.10.7,<4.0.0"
+numpy = ">=2.3.4,<3.0.0"
+pydantic = ">=2.7.4,<3.0.0"
 
 [build-system]
-requires = ["poetry-core>=2.0.0,<3.0.0"]
+requires = ["poetry-core>=1.0.0"]
 build-backend = "poetry.core.masonry.api"
