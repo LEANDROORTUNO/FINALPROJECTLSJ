@@ -3,6 +3,7 @@ import csv
 from typing import List
 from CodigoProyecto.Estructura import XYData
 
+
 def read(csv_path: Path) -> XYData:
     xs: List[float] = []
     ys: List[float] = []

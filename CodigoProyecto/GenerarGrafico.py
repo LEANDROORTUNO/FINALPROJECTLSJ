@@ -35,10 +35,11 @@ def main() -> None:
     data = read(csv_path)
     fig, _ = make_plot_3d(data)
                    
-    save_plot(fig, "GraficosPoetry/GraficoTabla1Cam.png")
-    print(f"✅ Gráfico guardado exitosamente en: GraficosPoetry/GraficoTabla1Cam.png")
+    save_plot(fig, "GraficosPoetry/GraficoTabla6cam.png")
+    print(f"✅ Gráfico guardado exitosamente en: GraficosPoetry/GraficoTabla6cam.png")
 
 # main
+
 if __name__ == "__main__":
     main()
 
