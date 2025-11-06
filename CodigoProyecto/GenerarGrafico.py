@@ -27,16 +27,16 @@ def save_plot(fig: plt.Figure, filename: str | Path) -> None:
 def main() -> None:
     import sys
     if len(sys.argv) < 2:
-                                       #CodigoProyecto/Graficador.py
+                                       
         print("Usage: poetry run python CodigoProyecto/GenerarGrafico.py <file.csv>")
         sys.exit(2)
 
     csv_path = Path(sys.argv[1])
     data = read(csv_path)
     fig, _ = make_plot_3d(data)
-                   #GraficosPoetry/NombreImagen.png
-    save_plot(fig, "GraficosPoetry/GraficoTabla1.png")
-    print(f"✅ Gráfico guardado exitosamente en: GraficosPoetry/GraficoTabla1.png")
+                   
+    save_plot(fig, "GraficosPoetry/GraficoTabla1Cam.png")
+    print(f"✅ Gráfico guardado exitosamente en: GraficosPoetry/GraficoTabla1Cam.png")
 
 # main
 if __name__ == "__main__":
