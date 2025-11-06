@@ -3,7 +3,7 @@ from typing import Tuple
 from CodigoProyecto.LectorCsv import read  
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
-
+#.
 
 def make_plot_3d(data) -> Tuple[plt.Figure, plt.Axes]:
     fig = plt.figure(figsize=(10, 8)) 

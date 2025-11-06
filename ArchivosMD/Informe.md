@@ -124,7 +124,16 @@ Ventura Guzman Jose Ignacio - 202505851 - B1 - ing.Informatica
 ## 
 
 ## GRAFICOS(Fotos)
-
-## RESULTADOS PARCIALES
-
-##
+![ Grafica de una tabla demostrando los resultados de la ecuacion .](GraficoTabla1.png)
+![En esta grafica cambia gracias al cambio de la variable.](GraficoTabla1cam.png)
+![En esta grafica se puede observar el resultado sin cambio de variable dando una semiparabola.](GraficoTabla2.png)
+![En esta grafica se puede observar el resultado con el cambio de variable donde nos da una figura.](GraficoTabla2cam.png)
+![En esta grafica se puede observar el resultado sin el cambio de variable dando una semiparobola descendiente.](GraficoTabla3.png)
+![En esta grafica se puede observar el resultado con el cambio de variable dando resultado a una linea recta. ](GraficoTabla3cam.png)
+![En esta grafica se puede observar el resulatado sin el cambio de variable dando resultado a una parabola descendiente.](GraficaTabla4.png)
+![En esta grafica se puede observar el resultado con el cambio de variable dando resultado a una parabola ascendente](GraficaTabla4cam.png)
+![En esta grafica se puede observar el resultado sin el cambio de variable dando resultado a una recta.](GraficaTabla5.png)
+![En esta grafica se puede observar el resultado con el cambio de variable dando resultado a una figura.](GraficaTabla5cam.png)
+![En esta grafica se puede observar el resultado sin  el cambio de variable dando resultado a una parabola descendiente.](GraficaTabla6.png)
+![En esta grafica se puede observar el resultado con el cambio de variable dando resultado a una recta con figura.](GraficaTabla6cam.png)
+ 

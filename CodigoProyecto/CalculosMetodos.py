@@ -1,6 +1,6 @@
 import math
 #Parte de la tarea para el informe:
-
+#.
 #poetry run python -m labfisica.CsvScatterPlot tests/data/data.csv
 
 #PARTE Tabla 1
