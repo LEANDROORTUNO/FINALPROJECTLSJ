@@ -6,30 +6,23 @@ import math
 def TablaXyT(tabla, tabla2):
     tablauxXyT = []
     aux = 0
-    print("Columna x: ")
-    for x in range(0,len(tabla),1):
-        print(tabla[x])
-    print("Columna t: ")
     for t in range(0,len(tabla2),1):
         aux = math.pow(tabla2[t], 2)
         tablauxXyT.append(aux)
-        print(tablauxXyT[t])
+    return tablauxXyT 
     
 #En Tabla XyV
 def TablaXyV(tabla, tabla2):
     tablauxXyV = []
     tablauxXyV2 = []
     aux = 0
-    print("Columna X: ")
     for x in range(0,len(tabla),1):
         aux = math.pow(tabla[x], 2)
         tablauxXyV.append(aux)
-        print(tablauxXyV[x])
-    print("Columna V: ")
     for v in range(0,len(tabla2),1):
         aux = math.pow(tabla2[v],2)
         tablauxXyV2.append(aux)
-        print(tablauxXyV2[v])
+    return tablauxXyV, tablauxXyV2 
 
 
 
@@ -40,8 +33,8 @@ def TablaXyV(tabla, tabla2):
 # main Tabla 1
 def mainTabla1():
 	#lista de datos del  Tabla1(t y x)
-    tabla1x = [1.000 , 0.951 , 0.809 , 0.588 , 0.309 , 0.000]
-    tabla1t = [0.000 , 0.200 , 0.400 , 0.600 , 0.800 , 1.000]
+	tabla1x = [1.000 , 0.951 , 0.809 , 0.588 , 0.309 , 0.000]
+	tabla1t = [0.000 , 0.200 , 0.400 , 0.600 , 0.800 , 1.000]
 	#lista de datos del  Tabla1(v y x) es
 	tabla1x = [1.000 , 0.951 , 0.809 , 0.588 , 0.309 , 0.000]
 	tabla1v = [0.000 , -0.485 , -0.923 , -1.271 , -1.491 , -1.571]
@@ -68,7 +61,7 @@ def mainTabla2():
 # main Tabla 3
 def mainTabla3():
 	#lista de datos de la Tabla3(t y x) es
-    tabla3x = [0.0 , 0.710 , 1.327 , 1.772 , 1.986 , 1.941]
+	tabla3x = [0.0 , 0.710 , 1.327 , 1.772 , 1.986 , 1.941]
 	tabla3t = [0.000 , 0.200 , 0.400 , 0.600 , 0.800 , 1.000]
 	# lista de datos de los tabla3(v y x) es
 	tabla3x = [0.0 , 0.710 , 1.327 , 1.772 , 1.986 , 1.941]
@@ -83,12 +76,11 @@ def mainTabla3():
 # main Tabla 4
 def mainTabla4():
 	#lista de datos del tabla4(t y x) es
-    tabla4x = [0.0 , 0.860 , 1.552, 1.944 , 1.958, 1.591]
+	tabla4x = [0.0 , 0.860 , 1.552, 1.944 , 1.958, 1.591]
 	tabla4t = [0.000 , 0.200 , 0.400 , 0.600 , 0.800 , 1.000]
 	#lista de datos del tabla4(v y x) es
 	tabla4x = [0.0 , 0.860 , 1.552, 1.944 , 1.958, 1.591]
 	tabla4v = [4.443, 4.012, 2.801, 1.047, -0.910, -2.691]
-
 	#metodo cambbio de variable XyT:
 	TablaXyT(tabla4x, tabla4t)
 	#metodo cambbio de variable XyV:
@@ -113,7 +105,7 @@ def mainTabla5():
 # main Tabla 6
 def mainTabla6():
 	#lista de datos del tabla6(t y x) es
-    tabla6x = [-1.000 , -0.809 , -0.309 , 0.309 , 0.809 , 1.000]
+	tabla6x = [-1.000 , -0.809 , -0.309 , 0.309 , 0.809 , 1.000]
 	tabla6t = [0.000 , 0.200 , 0.400 , 0.600 , 0.800 , 1.000]
 	#lista de datos del tabla6(v y x) es
 	tabla6x = [-1.000 , -0.809 , -0.309 , 0.309 , 0.809 , 1.000]
