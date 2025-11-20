@@ -35,8 +35,8 @@ def main() -> None:
     data = read(csv_path)
     fig, _ = make_plot(data)
                    
-    save_plot(fig, "GraficosPoetry/GraficoTabla6camVX.png")
-    print(f"✅ Gráfico guardado exitosamente en: GraficosPoetry/GraficoTabla6camVX.png")
+    save_plot(fig, "GraficosPoetry/GraficoTabla1.png")
+    print(f"✅ Gráfico guardado exitosamente en: GraficosPoetry/GraficoTabla1.png")
 
 # main
 if __name__ == "__main__":

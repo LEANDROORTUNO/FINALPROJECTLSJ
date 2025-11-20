@@ -110,7 +110,7 @@ Ventura Guzman Jose Ignacio - 202505851 - B1 - ing.Informatica
  
    Velocidad:
 
-          v(t)= dt/dx = Aωcos(ωt+φ)
+          v(t)= dt/dx = -Aωcos(ωt+φ)
 
    Aceleración:
 
