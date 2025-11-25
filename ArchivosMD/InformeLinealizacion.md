@@ -333,17 +333,32 @@ def test_CoefiB():
 
 ### USO CODIGO CALCULO LINEALIZACION
 
+
 ### USO CODIGO CALCULO COEFICIENTE A
 
 ### USO CODIGO CALCULO COEFICIENTE B
 
+
 ### USO DE LOS TESTS
+Primreo se importa en la parte superior el archivo de donde usaremos la importacion para el respectivo calculo con los test
+de la siguiente manera:
+
+        from CalculoProyecto import CoefiA as CA
+importamos la carpeta, el archivo y le designamos un alias, el alias nos servira para poder usar los metodos que devuelven los resultados esperados,
+una vez realizado esto, en la terminal se pone el comando de pytest para que haga  los respectivos calculos de los test.
+
+Mismo caso para lo que es el para el coeficiente de B y para los errores
+se importe la carpeta, el archivo y se le designa un alias.
+
 
 ## RESULTADOS
-
 ### RESULTADOS LINEALIZACION
+Los resultados esperados en esta seccion de repositorio son las tablas linealizadas, posteriormente, en la carpeta de GraficosPoetry, estan todas las imagenes de las 
+tablas, T y X e V y X, ambas sin cambio y con cambio.
+
 
 ### RESULTADOS COEFICIENTES A Y B
+
 
 ### RESULTADOS TESTS
 Los resultados de los test tienen que que haya pasado los test, como resultado obtenemos que no tenemos errores en el resultado de los test
