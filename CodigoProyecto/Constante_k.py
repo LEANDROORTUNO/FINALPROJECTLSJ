@@ -107,3 +107,10 @@ def main():
     promedio_general = (promedio1 + promedio2 + promedio3 + promedio4 + promedio5 + promedio6) / 6
     return promedio_general
 
+def main2():
+    print(promedio_k_tabla1())
+    print(promedio_k_tabla2())
+    print(promedio_k_tabla3())
+    print(promedio_k_tabla4())
+    print(promedio_k_tabla5())
+    print(promedio_k_tabla6())
