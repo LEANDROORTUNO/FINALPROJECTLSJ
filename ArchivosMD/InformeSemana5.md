@@ -7,8 +7,7 @@ Ortuno Cespedes Leandro Andre - CodSis: 202507179
 ###
 Ventura Guman Jose Ignacio - CodSis 202505851
 
-##PARTE JOSE
-## DATOS
+## PARTE JOSE-DATOS
 
 COEFIS B :
 
@@ -166,8 +165,7 @@ El codigo fue sencillo en pocas palabras ya que simplemente utilice los datos qu
 otro codigo que en este caso fue coefB, despues ya solo fue colocar las masas de cada tabla ya
 dadas y asi realizar las operaciones. 
 
-##PARTE SEBASTIAN
-## DATOS
+##PARTE SEBAS-DATOS
 k = 0.25
 m = 9
 error de la masa = 01
@@ -197,13 +195,109 @@ error_periodoT = 0.20943951023931953
 
 ## OBSERVACIONES
 El codigo es corto pero muy funcional siempre hay que compilarlo para suelte los resultados.
-##PARTE LEANDRO
-##DATOS
+
+
+
+## PARTE LEANDRO-DATOS
 
 ## CODIGO
+from pathlib import Path
+from typing import Tuple, Dict, Any # Importamos Dict y Any para el tipado
+import matplotlib.pyplot as plt
+import numpy as np
+import PeriodoT as PT
+import Constante_k as CK
+import CoefiA as CA
+//poetry run python CodigoProyecto/GraficaMovArmonico.py
+
+def generate_mas_data(A: float, k: float, m: float, t_max: float) -> Dict[str, Any]:
+    """
+    Genera y devuelve los datos del M.A.S. en un diccionario.
+    """
+    omega = np.sqrt(k / m)
+    t = np.linspace(0, t_max, 500)
+    x = A * np.cos(omega * t) 
+    
+    # Devolvemos un diccionario con las claves necesarias
+    data = {
+        't': t,
+        'x': x,
+        'tName': "Tiempo (s)",
+        'xName': "Posición (m)",
+        'm': m, # Agregamos la masa para el título
+        'k': k  # Agregamos k para el título
+    }
+    
+    return data
+
+def make_plot(data: Dict[str, Any]) -> Tuple[plt.Figure, plt.Axes]:
+    fig, ax = plt.subplots(figsize=(10, 6))
+    ax.plot(data['t'], data['x'], marker=None, color='red', linewidth=2)
+    
+    ax.set_title(f"Movimiento Armónico Simple (M={data['m']:.1f}kg, K={data['k']:.1f}N/m)", fontsize=14)
+    ax.set_xlabel(data['tName'], fontsize=12)
+    ax.set_ylabel(data['xName'], fontsize=12)
+    
+    ax.axhline(0, color='black', linestyle='-', linewidth=0.8) 
+    ax.grid(True, which="both", linestyle="--", linewidth=0.5, alpha=0.7)
+    
+    fig.tight_layout()
+    return fig, ax
+
+// --- Las funciones save_plot y main quedan casi iguales ---
+def save_plot(fig: plt.Figure, filename: str | Path) -> None:
+    Path(filename).parent.mkdir(parents=True, exist_ok=True)
+    fig.savefig(filename, format="png", dpi=150)
+
+// Parámetros del M.A.S.
+A = CA.promedio()
+k = CK.main()
+m = 9.0
+T= PT.periodoT()
+
+
+def main() -> None:
+    mas_data = generate_mas_data(A, k, m, T)
+    fig, _ = make_plot(mas_data)
+    
+    output_filename = "GraficosPoetry/GraficoOscilaciones.png"
+    save_plot(fig, output_filename)
+    
+    print(f"✅ Gráfico guardado exitosamente en: {output_filename}")
+    
+// main
+if __name__ == "__main__":
+    main()
 
 ##COMO USAR CODIGO
+Se realizo 3 importaciones para el respectivo codigo, para poder usar los valores de K, T y A, por lo que se realizo lo siguiente: import PeriodoT as PT
+import Constante_k as CK
+import CoefiA as CA
+ en el cual se logro el uso de poetry para graficar la ocsilacion de masa 9m, usando la libreria  numpy y otras herramientas para el correcto uso de poetry:
+from pathlib import Path
+from typing import Tuple, Dict, Any # Importamos Dict y Any para el tipado
+import matplotlib.pyplot as plt
+import numpy as np
+Se creo un metodo save,plot, para el guardao de la imagen al momento de graficarla con poetry.
+se creo metodos de graficacion enfocandonos en la siguiente formula de oscilacion:
+x(t)=Acos(ωt)
+la cual se uso en el metodo de ocsilacion dentro de codigo, se realizo dos tipos de imagenes, de PRUEBA y con los datos que logramos obtener en el codigo:
+los datos de prueba fueron los siguientes: A = 5.0, K = 10.0, m = 9m y para T = 10.0
+![Imagen obtenida con los datos de prueba](GraficoOscilacionesPRUEBA.png)
+Con los datos que se obtuvo al invocar las funciones correspondientes fueron las siguientes: para A = PT.main(), K = ck.main(), t = PT.promedio() 
+![Imagen obtenida con los datos obtenidos por los metodos invocados](GraficoOscilaciones.png)
+Una vez teniendo las imagenes vemos que tenemos oscilaciones esperadas con la masa 9m, que es lo que se esperaba dentro de los graficos con poetry
+
+Para lograr obtener el grafico, utilizamos el siguiente comando, dentro de la terminal, para poder obtener la imagen esperada:
+poetry run python CodigoProyecto/GraficaMovArmonico.py
+
+El cual una vez ejecutada nos tenia que salir un mensaje de que se creo la imagen correctamente:
+print(f"✅ Gráfico guardado exitosamente en: {output_filename}, el cua se guardaba dentro de la carpeta: GraficosPoetry
 
 ## RESULTADOS
+Los resultados fueron las imagenes con oscialciones, tanto la imagen con los datos de prueba, como la imagen con los datos obtenidos, teniendo asi, graficos
+con oscilaciones que es justo lo que se esperaba tener al momento de obtener el codigo.
 
 ## OBSERVACIONES
+se tuvo que usar dos tipos de datos para poder verificar la eficiencia de el codigo de Grafico de movimiento armonico simple, una vez asegurado que el codigo 
+funcionara correctamente se uso los datos obtenidos por los metodos correspondientes,
