@@ -1,7 +1,7 @@
 # INFORME
 INFORME SEMANA 6
 ## INTEGRANTE
-Ortuno Cespedes Leandro Andre - CodSis: 202507179 - Grupo: B1
+Ortuno Cespedes Leandro Andre - CodSis: 202507179 - Grupo: B1 - Carrera: Ing. Informatica
 ### QUE APRENDIERON EN EL LAB?
 Aprendimos la implementacion de la programacion en la materia de laboratorio de fisica, el Ing. Gabriel Iturry nos esseño exitosamente el uso de herramientas
 de graficacion como de calculo, sin olvidar el uso de repositorios y git(Manejo de versiones), de forma colaborativa(en grupo), mi equipo de trabajo vence la 
