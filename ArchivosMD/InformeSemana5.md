@@ -168,13 +168,42 @@ dadas y asi realizar las operaciones.
 
 ##PARTE SEBASTIAN
 ## DATOS
+k = 0.25
+m = 9
+error de la masa = 01
 
+## CODIGO
+import math
+import Constante_k as ctte
+def periodoT():
+        k = ctte.main()
+        m = 9
+        return 2*math.pi*math.sqrt(m/k)
+def error_periodoT():
+        m = 9
+        dm = 0.1
+        return (periodoT()/(2*m)) *dm
+
+## COMO USAR CODIGO
+El codigo sirve para hallar el periodo de oscilacion (T) junto con su error del periodo.
+En primer lugar hay que dirigirse a la consola del programa donde hay llamarla por su funcion
+(periodoT()) y el return devolvera el resultado el cual es el periodo de oscilacion.
+Tambien se procede con el error tambien llamandola por su funcion (error_periodoT()),la cual
+nos devolvera su resultado.
+
+## RESULTADOS
+periodoT = 37.69911184307752
+error_periodoT = 0.20943951023931953
+
+## OBSERVACIONES
+El codigo es corto pero muy funcional siempre hay que compilarlo para suelte los resultados.
+##PARTE LEANDRO
+##DATOS
 
 ## CODIGO
 
-## COMO USAR CODIGO
+##COMO USAR CODIGO
 
 ## RESULTADOS
 
 ## OBSERVACIONES
-
