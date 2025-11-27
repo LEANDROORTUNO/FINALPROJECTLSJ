@@ -107,3 +107,4 @@ def main():
     promedio_general = (promedio1 + promedio2 + promedio3 + promedio4 + promedio5 + promedio6) / 6
     return promedio_general
 
+

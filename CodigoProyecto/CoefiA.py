@@ -191,6 +191,16 @@ def main6VX():
 	CofA = (int)(CoefA(n, Suma_x, Suma_x2,  Suma_y, Suma_xy, Delta))
 	return CofA
 
+def promedio():
+    Lista = [main1TX(), main2TX(), main3TX(), main4TX(), main5TX(), main6TX(), main1VX(), main2VX(), main3VX(), main4VX(), main5VX(), main6VX()]
+    n = len(Lista)
+    suma = 0
+    promedio = 0
+    for i in range(0, n - 1, 1):
+        suma = suma + Lista[i]
+    promedio = suma / n
+    return promedio
+
 
 # main()
 def main():
