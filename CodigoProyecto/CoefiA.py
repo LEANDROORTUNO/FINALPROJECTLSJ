@@ -1,4 +1,4 @@
-min
+
 import math
 
 def suma_x(listaX):
