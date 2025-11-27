@@ -10,6 +10,29 @@ Ventura Guman Jose Ignacio - CodSis 202505851
 ##PARTE JOSE
 ## DATOS
 
+COEFIS B :
+
+CoefiB1TX
+CoefiB1VX
+CoefiB2TX
+CoefiB2VX
+CoefiB3TX
+CoefiB3VX
+CoefiB4TX
+CoefiB4VX
+CoefiB5TX
+CoefiB5VX
+CoefiB6TX
+CoefiB6VX
+
+MASAS:
+ 
+Tabla1 = masa:4 
+Tabla2 = masa:3
+Tabla3 = masa:3
+Tabla4 = masa:2
+Tabla5 = masa:2
+Tabla6 = masa:1
 
 ## CODIGO
 
@@ -124,10 +147,24 @@ def main():
 
 ## COMO USAR CODIGO
 
+Este codigo tiene la funcion de sacar las constantes elasticas de cada tabla, como la constante k 
+es: k = m * (-B), pues lo que hice fue sacar la constante de cada tabla.
+Para que esto funcione lo primero que se tiene que hacer es importar los datos del coeficiente B 
+de cada tabla TX y VX de otro archivo para asi utilizar esos datos y realizar las operaciones, 
+despues de sacar las constantes de cada tabla procedemos a sacar el promedio de todas las 
+constantes de las tablas, sumando y dividiendolo entre 6 ya que son 6 tablas, asi es como saque 
+la constante k general de todas las tablas.
 
 ## RESULTADOS
 
+El resultado es:
+k = 0.25
+
 ## OBSERVACIONES
+
+El codigo fue sencillo en pocas palabras ya que simplemente utilice los datos que ya habian en 
+otro codigo que en este caso fue coefB, despues ya solo fue colocar las masas de cada tabla ya
+dadas y asi realizar las operaciones. 
 
 ##PARTE SEBASTIAN
 ## DATOS
