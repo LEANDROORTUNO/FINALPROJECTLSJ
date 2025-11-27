@@ -166,6 +166,7 @@ otro codigo que en este caso fue coefB, despues ya solo fue colocar las masas de
 dadas y asi realizar las operaciones. 
 
 ##PARTE SEBAS-DATOS
+
 k = 0.25
 m = 9
 error de la masa = 01
