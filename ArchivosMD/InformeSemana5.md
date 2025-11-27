@@ -165,7 +165,7 @@ El codigo fue sencillo en pocas palabras ya que simplemente utilice los datos qu
 otro codigo que en este caso fue coefB, despues ya solo fue colocar las masas de cada tabla ya
 dadas y asi realizar las operaciones. 
 
-##PARTE SEBAS-DATOS
+## PARTE SEBAS-DATOS
 
 k = 0.25
 m = 9
