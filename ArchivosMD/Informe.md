@@ -15,7 +15,7 @@ Ventura Guzman Jose Ignacio - 202505851 - B1 - ing.Informatica
    al desplazamiento del objeto y actúa en la dirección opuesta a ese desplazamiento. Este comportamiento puede
    observarse en muchos sistemas físicos, como péndulos y masas unidas a resortes, y se describe mediante la ecuación
  
-               F = -kx
+               
 
    donde F es Partes importantes la fuerza restauradora, k es la constante de proporcionalidad (o constante del
    resorte) y x es el desplazamiento del objeto con respecto a la posición de equilibrio.
